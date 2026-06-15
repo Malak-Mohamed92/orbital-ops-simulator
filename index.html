@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Mission Control Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🚀 Space Mission Control Simulator</h1>
+
+    <div class="controls">
+        <input type="number" id="generationTime" placeholder="Task Generation (ms)" value="2000">
+        <input type="number" id="processingTime" placeholder="Processing Time (ms)" value="3000">
+
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>Mission Queue</h2>
+            <p>Pending Tasks: <span id="pending">0</span></p>
+        </div>
+
+        <div class="card">
+            <h2>Engineer</h2>
+            <p id="currentTask">Idle</p>
+        </div>
+
+        <div class="card">
+            <h2>Statistics</h2>
+            <p>Total Generated: <span id="generated">0</span></p>
+            <p>Total Completed: <span id="completed">0</span></p>
+        </div>
+
+        <div class="card">
+            <h2>Completed Missions</h2>
+            <ul id="completedList"></ul>
+        </div>
+
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
